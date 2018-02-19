@@ -22,8 +22,8 @@ spring:
             hibernate.cache.region.factory_class: io.github.jhipster.config.jcache.NoDefaultJCacheRegionFactor
             hibernate.ddl-auto: none
 
-liquibase:
-    contexts: prod
+#liquibase:
+#    contexts: prod
 
 endpoints
     enabled: false
