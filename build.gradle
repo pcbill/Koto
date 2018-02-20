@@ -51,9 +51,9 @@ dependencies {
 	compile('org.springframework.boot:spring-boot-starter-data-jpa')
 //	compile('org.liquibase:liquibase-core')
 
-    if (!project.hasProperty('without_security')) {
-        compile('org.springframework.boot:spring-boot-starter-security')
-    }
+   // if (!project.hasProperty('without_security')) {
+     //   compile('org.springframework.boot:spring-boot-starter-security')
+    //}
 
 	compile('org.springframework.boot:spring-boot-starter-web')
 	compile('org.springframework.boot:spring-boot-starter-freemarker')
