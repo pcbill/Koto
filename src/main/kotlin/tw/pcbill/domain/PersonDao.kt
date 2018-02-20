@@ -8,5 +8,4 @@ interface PersonDao : JpaRepository<Person, String> {
     fun findByPersonId(personId: String): List<Person>
     fun findByName(name: String): List<Person>
 
-    //fun findById(id: String): List<Person>
 }

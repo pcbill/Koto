@@ -43,14 +43,8 @@ class CrudController {
         if (idp.isBlank()) {
             logger.error("the id of person is blank")
         } else {
-            //val id = UUID.fromString(idp)
             val peopleOpt = personDao.findById(idp)
-                    peopleOpt.get().registrationTime = null
-            //when {
-            //    people.size > 1 -> logger.error("multiple people have same personId !")
-              //  people.size == 1 ->  people[0].registrationTime = null
-                //else -> logger.error("the id of person didn't exist!")
-            //}
+            peopleOpt.get().registrationTime = null
         }
 
         return refreshAndGoToRegistrationManagementPage()

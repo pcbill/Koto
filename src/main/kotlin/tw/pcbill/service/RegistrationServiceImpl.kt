@@ -33,20 +33,9 @@ class RegistrationServiceImpl : RegistrationService {
     //@PostConstruct
     fun postConstruct() {
 
-        val winnie = Person("002", "bill")
-        winnie.registrationTime = Date()
-
         personDao.saveAll(listOf(
                 Person("001","bill"),
-                Person("002","bill"),
-                Person("001","bill"),
-                Person("001","bill"),
-                Person("001","bill"),
-                Person("001","bill"),
-                Person("001","bill"),
-                Person("001","bill"),
-                Person("001","bill"),
-                winnie
+                Person("001","bill")
                 ))
     }
 
