@@ -34,7 +34,7 @@
 
     <div class="col-md-6">
         <br/>
-        共有 ${people?size} 人已經完成報到
+        共有 ${people?size} 人已經完成報到, ${totalCount} in database
         <table class="table table-bordered table-hover">
           <tr>
             <th>操作</th>
