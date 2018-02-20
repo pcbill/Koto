@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service
 import tw.pcbill.domain.Person
 import tw.pcbill.domain.PersonDao
 import java.util.*
-import javax.annotation.PostConstruct
 import javax.transaction.Transactional
 
 @Service
@@ -31,7 +30,7 @@ class RegistrationServiceImpl : RegistrationService {
         return personDao.findByRegistrationTimeIsNotNull()
     }
 
-    @PostConstruct
+    //@PostConstruct
     fun postConstruct() {
 
         val winnie = Person("002", "bill")
