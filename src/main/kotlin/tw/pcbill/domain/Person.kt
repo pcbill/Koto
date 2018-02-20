@@ -9,7 +9,7 @@ import javax.persistence.Id
 data class Person(
         @Column(unique=true) val personId: String,
         val name: String,
-        @Id val id: UUID ?= UUID.randomUUID() )
+        @Id val id: String ?= UUID.randomUUID().toString() )
 {
     var registrationTime : Date? = null
     var createTime : Date = Date()
