@@ -17,7 +17,12 @@ class RegistrationController {
     @GetMapping("/")
     fun registration(): ModelAndView {
 
-        return refreshAndGoToRegistrationPage()
+        return refreshAndGoToPage("registration")
+    }
+
+    @GetMapping("/management")
+    fun registrationManagement(): ModelAndView {
+        return refreshAndGoToPage("registrationManagement")
     }
 
     @PostMapping("/registerByPersonId")
@@ -25,7 +30,7 @@ class RegistrationController {
 
         registrationService.registerByPersonId(person.personId)
 
-        return refreshAndGoToRegistrationPage()
+        return refreshAndGoToPage("registration")
     }
 
     @PostMapping("/registerByName")
@@ -33,13 +38,13 @@ class RegistrationController {
 
         registrationService.registerByName(person.name)
 
-        return refreshAndGoToRegistrationPage()
+        return refreshAndGoToPage("registration")
     }
 
-    private fun refreshAndGoToRegistrationPage(): ModelAndView {
+    private fun refreshAndGoToPage(pageName: String): ModelAndView {
         val re = HashMap<String, Any>()
         re.put("people", registrationService.listAllRegistered())
-        return ModelAndView("registration", re)
+        return ModelAndView(pageName, re)
     }
 
 
