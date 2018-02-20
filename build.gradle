@@ -39,11 +39,11 @@ repositories {
 	maven { url "https://repo.spring.io/milestone" }
 }
 
-if (project.hasProperty('prod')) {
+//if (project.hasProperty('prod')) {
     apply from: 'gradle/profile_prod.gradle'
-} else {
-    apply from: 'gradle/profile_dev.gradle'
-}
+//} else {
+ //   apply from: 'gradle/profile_dev.gradle'
+//}
 
 dependencies {
 	compile('org.springframework.boot:spring-boot-starter-actuator')

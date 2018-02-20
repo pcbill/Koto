@@ -38,6 +38,14 @@ class RegistrationServiceImpl : RegistrationService {
 
         personDao.saveAll(listOf(
                 Person("001","bill"),
+                Person("002","bill"),
+                Person("001","bill"),
+                Person("001","bill"),
+                Person("001","bill"),
+                Person("001","bill"),
+                Person("001","bill"),
+                Person("001","bill"),
+                Person("001","bill"),
                 winnie
                 ))
     }
