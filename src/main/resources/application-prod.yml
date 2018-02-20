@@ -27,7 +27,7 @@ spring:
 #liquibase:
 #    contexts: prod
 
-endpoints
+endpoints:
     enabled: false
     info:
         enabled: true
