@@ -18,12 +18,12 @@
                 報到
             </h3>
 
-            <form action="/registerSubmit" method="POST">
-                號碼 <input id="uid" name="uid" type="text" forcus />
+            <form action="/registerByPersonId" method="POST">
+                號碼 <input id="personId" name="personId" type="text" forcus />
                 <button type="submit" value="submit">submit</button>
             </form>
 
-            <form action="/registerByNameSubmit" method="POST">
+            <form action="/registerByName" method="POST">
                 姓名 <input id="name" name="name" type="text"/>
                 <button type="submit" value="submit">submit</button>
             </form>
@@ -58,5 +58,5 @@
 
 </body>
 
-<script> document.getElementById("uid").focus(); </script>
+<script> document.getElementById("personId").focus(); </script>
 </html>
