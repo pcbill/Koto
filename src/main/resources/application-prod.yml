@@ -4,7 +4,7 @@ spring:
        # url: jdbc:mysql://localhost:3306/foojhipster?useUnicode=true&characterEncoding=utf8&useSSL=false
        # url: jdbc:postgres://localhost:5432/mydb
        # url: postgresql-closed-49372
-        url: jdbc:postgres://localhost:5432/mydb
+        url: jdbc:postgres://postgresql-closed-49372:5432/mydb
         username: root
         password:
         hikari:
