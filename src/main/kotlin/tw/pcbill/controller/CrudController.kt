@@ -60,6 +60,7 @@ class CrudController {
     private fun refreshAndGoToRegistrationManagementPage(): ModelAndView {
         val re = HashMap<String, Any>()
         re.put("people", registrationService.listAllRegistered())
+        re.put("totalCount", personDao.findAll().size)
         return ModelAndView("registrationManagement", re)
     }
 }
