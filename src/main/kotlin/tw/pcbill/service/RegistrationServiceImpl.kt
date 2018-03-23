@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service
 import tw.pcbill.domain.Person
 import tw.pcbill.domain.PersonDao
 import java.util.*
-import javax.annotation.PostConstruct
 import javax.transaction.Transactional
 
 @Service
@@ -39,7 +38,7 @@ class RegistrationServiceImpl : RegistrationService {
         }
     }
 
-    @PostConstruct
+    //@PostConstruct
     fun postConstruct() {
 
         personDao.saveAll(listOf(
